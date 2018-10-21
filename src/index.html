@@ -2,13 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Dosis|Playfair+Display+SC|Montserrat" rel="stylesheet">
     <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
-    <title>Personal Website</title>
+   <link rel="stylesheet" href="path/to/swiper.min.css">
+
+<!-- swiper JS link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
+
+    <title>About Talia Grace</title>
 </head>
 <body>
 
@@ -134,7 +139,146 @@
 </nav>
 
 
-    <!-- Get In Touch Banner -->
+<!-- Image Slider -->
+<div class="talia-container">
+    <div class="swiper-container main-slider loading">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <figure class="slide-bgimg" style="background-image:url(assets/images/2-featured.jpg)">
+            <img src="assets/images/2-featured.png" class="entity-img" />
+          </figure>
+          <div class="content">
+            <p class="title">PHOGO</p>
+            <span class="caption">
+              Brand Strategy | Logo Design | Graphic Design <br><br> A start-up that described itself as "Uber, but for photography" wanted to create a branding strategy around extremely affordable, high-quality, on-the-go photography through an app-based platform. I conceptualized and designed the 'capture _______' and '#thinkPHOGO' campaign, as well as a logo, lookbook, and other marekting materials."</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <figure class="slide-bgimg" style="background-image:url(assets/images/1-featured.png)">
+            <img src="assets/images/1-featured.png" class="entity-img" />
+          </figure>
+          <div class="content">
+            <p class="title">Hydroelectric Poster</p>
+            <span class="caption">Graphic Design <br><br> Designed a poster for the UW Program On the Environment's (POE) undergraduate research symposium to showcase the current status, effects, and impacts of hydroelectric energy around the world. The poster was recognized for its eye-catching qualities and unique use of data visualization.</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <video autoplay loop muted class="slide-bgimg">
+            <source src="assets/images/4-featured.mov" type="video/mp4" class="entity-img" />
+          </video>
+          <div class="content">
+            <p class="title">Avenida Shoes</p>
+            <span class="caption">Website Design | Logo Design | Digital Strategy <br><br> A shoe company start-up in Portland was looking for a logo, digital strategy, and website centered around the 'slick streetware' feel. They wanted it to be clean but edgy, daring but relatable - with lots of motion and interactivity built into their website.</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <figure class="slide-bgimg" style="background-image:url(assets/images/6-featured.jpg)">
+            <img src="assets/images/6-featured.jpg" class="entity-img" />
+          </figure>
+          <div class="content">
+            <p class="title">Built Green</p>
+            <span class="caption">Infographic Design | Data Analysis | Data Visualization <br><br> After I helped to conduct the largest known post-occupancy study of actual electricity savings from Built Green homes, Built Green of the Master Builders Association contracted me to create the data visualization graphics for the study. The goal was to showcase how Built Green homes are even more efficient than was previously thought in a fun, engaging manner.</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <video autoplay loop muted class="slide-bgimg">
+            <source src="assets/images/7-featured.mov" type="video/mp4" class="entity-img" />
+          </video>
+          <div class="content">
+            <p class="title">LoveWork</p>
+            <span class="caption">Website Design | Logo Design | Digital Strategy <br><br> A co-working space business desired a website that matched their fun, playful, and inclusive aesthetic. They wanted bright colors, a clean appearance, and fluidity in their site.</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <figure class="slide-bgimg" style="background-image:url(assets/images/1-featured.jpg)">
+            <img src="assets/images/1-featured.jpg" class="entity-img" />
+          </figure>
+          <div class="content">
+            <p class="title">Green Greeks</p>
+            <span class="caption">Content Creation | Wordpress | Graphic Design | Brand Strategy <br><br> I created this organization in college to do sustainable business consulting within the University of Washington Greek Community, helping our community get on track to save over $500,000 within the next five years from sustainable home solutions. As the Director, I created all of our first and second year marketing materials, including posters, style guides, annual reports, social media content, and website.</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <video autoplay loop muted class="slide-bgimg">
+            <source src="assets/images/5.1-featured.mov" type="video/mp4" class="entity-img" />
+          </video>
+          <div class="content">
+            <p class="title">Bucha Belly</p>
+            <span class="caption">Social Media Strategy | Logo Design | Content Creation <br><br> A kombucha company in Seattle wanted an Instagram branding strategy that would speak to fit & fun 18-24-yr-olds. It was targeted more at females but they didn't want it to be off-putting to men.</span>
+          </div>
+        </div>
+      </div>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev swiper-button-black"></div>
+      <div class="swiper-button-next swiper-button-black"></div>
+    </div>
+
+    <!-- Thumbnail navigation -->
+    <div class="swiper-container nav-slider loading">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <figure class="slide-bgimg" style="background-image:url(assets/images/featured-1.jpg)">
+            <img src="assets/images/featured-1.jpg" class="entity-img" />
+          </figure>
+          <div class="content-th">
+            <p class="title">PHOGO</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <figure class="slide-bgimg" style="background-image:url(assets/images/featured-2.jpg)">
+            <img src="assets/images/featured-2.jpg" class="entity-img" />
+          </figure>
+          <div class="content-th">
+            <p class="title">Hydroelectric</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <figure class="slide-bgimg" style="background-image:url(assets/images/featured-3.jpg)">
+            <img src="assets/images/featured-3.jpg" class="entity-img" />
+          </figure>
+          <div class="content-th">
+            <p class="title">Avenida</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <figure class="slide-bgimg" style="background-image:url(assets/images/featured-4.jpg)">
+            <img src="assets/images/featured-4.jpg" class="entity-img" />
+          </figure>
+          <div class="content-th">
+            <p class="title">Built Green</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <figure class="slide-bgimg" style="background-image:url(assets/images/featured-5.jpg)">
+            <img src="assets/images/featured-5.jpg" class="entity-img" />
+          </figure>
+          <div class="content-th">
+            <p class="title">LoveWork</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <figure class="slide-bgimg" style="background-image:url(assets/images/featured-6.jpg)">
+            <img src="assets/images/featured-6.jpg" class="entity-img" />
+          </figure>
+          <div class="content-th">
+            <p class="title">Green Greeks</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <figure class="slide-bgimg" style="background-image:url(assets/images/featured-7.jpg)">
+            <img src="assets/images/featured-7.jpg" class="entity-img" />
+          </figure>
+          <div class="content-th">
+            <p class="title">Bucha Belly</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- End of Image Slider -->
+
+<!-- Get In Touch Banner -->
 <div class="footer-container">
     <div class="get-in-touch">
       <h2 class="title title-l title-dark">Get In Touch</h2>
@@ -166,6 +310,105 @@
   </div>
 </div>
 
-  <!-- </div> -->
+<!-- Image Slider JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+
+  <script>
+   // Params
+   let mainSliderSelector = '.main-slider',
+       navSliderSelector = '.nav-slider',
+       interleaveOffset = 0.5;
+
+   // Main Slider
+   let mainSliderOptions = {
+         loop: true,
+         speed:1000,
+         autoplay:{
+           delay:3000
+         },
+         loopAdditionalSlides: 10,
+         grabCursor: true,
+         watchSlidesProgress: true,
+         navigation: {
+           nextEl: '.swiper-button-next',
+           prevEl: '.swiper-button-prev',
+         },
+         on: {
+           init: function(){
+             this.autoplay.stop();
+           },
+           imagesReady: function(){
+             this.el.classList.remove('loading');
+             this.autoplay.start();
+           },
+           slideChangeTransitionEnd: function(){
+             let swiper = this,
+                 captions = swiper.el.querySelectorAll('.caption');
+             for (let i = 0; i < captions.length; ++i) {
+               captions[i].classList.remove('show');
+             }
+             swiper.slides[swiper.activeIndex].querySelector('.caption').classList.add('show');
+           },
+           progress: function(){
+             let swiper = this;
+             for (let i = 0; i < swiper.slides.length; i++) {
+               let slideProgress = swiper.slides[i].progress,
+                   innerOffset = swiper.width * interleaveOffset,
+                   innerTranslate = slideProgress * innerOffset;
+               swiper.slides[i].querySelector(".slide-bgimg").style.transform =
+                 "translate3d(" + innerTranslate + "px, 0, 0)";
+             }
+           },
+           touchStart: function() {
+             let swiper = this;
+             for (let i = 0; i < swiper.slides.length; i++) {
+               swiper.slides[i].style.transition = "";
+             }
+           },
+           setTransition: function(speed) {
+             let swiper = this;
+             for (let i = 0; i < swiper.slides.length; i++) {
+               swiper.slides[i].style.transition = speed + "ms";
+               swiper.slides[i].querySelector(".slide-bgimg").style.transition =
+                 speed + "ms";
+             }
+           }
+         }
+       };
+   let mainSlider = new Swiper(mainSliderSelector, mainSliderOptions);
+
+   // Navigation Slider
+   let navSliderOptions = {
+         loop: true,
+         loopAdditionalSlides: 10,
+         speed:1000,
+         spaceBetween: 5,
+         slidesPerView: 5,
+         centeredSlides : true,
+         touchRatio: 0.2,
+         slideToClickedSlide: true,
+         direction: 'vertical',
+         on: {
+           imagesReady: function(){
+             this.el.classList.remove('loading');
+           },
+           click: function(){
+             mainSlider.autoplay.stop();
+           }
+         }
+       };
+   let navSlider = new Swiper(navSliderSelector, navSliderOptions);
+
+   // Matching sliders
+   mainSlider.controller.control = navSlider;
+   navSlider.controller.control = mainSlider;
+
+ </script>
+
+<!-- End of Image Slider JS -->
+
+
+
   </body>
 </html>

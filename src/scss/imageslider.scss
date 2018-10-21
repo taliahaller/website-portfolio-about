@@ -1,0 +1,168 @@
+.talia-container {
+  margin: 200px auto;
+  display: flex;
+  justify-content: center;
+  height: 622px;
+  position: relative;
+}
+
+[class^="swiper-button-"] {
+  transition: all .3s ease;
+}
+
+.swiper-slide {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper-container {
+  width: 720px;
+  height: 622px;
+  float: left;
+  transition: opacity .6s ease, -webkit-transform .3s ease;
+  transition: opacity .6s ease, transform .3s ease;
+  transition: opacity .6s ease, transform .3s ease, -webkit-transform .3s ease;
+}
+.swiper-container.nav-slider {
+  width: 176px;
+  padding-left: 5px;
+}
+.swiper-container.nav-slider .swiper-slide {
+  cursor: pointer;
+  opacity: .4;
+  transition: opacity .3s ease;
+}
+.swiper-container.nav-slider .swiper-slide.swiper-slide-active {
+  opacity: 1;
+}
+.swiper-container.nav-slider .swiper-slide .content {
+  width: 100%;
+}
+
+.swiper-container.nav-slider .swiper-slide .content .title {
+  font-size: 20px;
+}
+.swiper-container:hover .swiper-button-prev,
+.swiper-container:hover .swiper-button-next {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+.swiper-container.loading {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.swiper-slide {
+  overflow: hidden;
+}
+.swiper-slide .slide-bgimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  /* background-size: cover; */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.swiper-slide .slide-bgimg-th {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-position: center;
+  background-size: cover;
+}
+.swiper-slide .entity-img {
+  display: none;
+}
+.swiper-slide .content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  background-color: rgba(169, 44, 82, .9);
+  font-family: "Hiragino Sans";
+  font-weight: 100;
+}
+
+.swiper-slide .content-th {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 100%;
+  margin-left: 25%;
+  padding-left: 10%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  color: #fff;
+  background-color: rgba(169, 44, 82, 0.7);
+  font-family: "Hiragino Sans";
+  font-weight: 100;
+  text-transform: lowercase;
+border-radius: 20px;
+}
+
+.swiper-slide .content .title {
+  font-size: 2em;
+  font-weight: bold;
+  padding-top: 1.5%;
+  padding-left: 5%;
+}
+.swiper-slide .content .caption {
+  display: block;
+  font-size: 12px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  padding: 0 5%;
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+  opacity: 0;
+  transition: opacity .3s ease, -webkit-transform .7s ease;
+  transition: opacity .3s ease, transform .7s ease;
+  transition: opacity .3s ease, transform .7s ease, -webkit-transform .7s ease;
+}
+.swiper-slide .content .caption.show {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+}
+
+[class^="swiper-button-"] {
+  width: 44px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.swiper-button-prev {
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+}
+
+.swiper-button-next {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+}
+
+@media screen and (min-width: 900px) {
+  .talia-container {
+    width: 900px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .nav-slider {
+    display: none;
+  }
+  .talia-container {
+    max-width: 720px;
+  }
+}

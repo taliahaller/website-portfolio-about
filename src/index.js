@@ -2,6 +2,9 @@ import './scss/index.scss';
 // import { pingPong } from './ping-pong.js';
 import $ from 'jquery';
 
+import fourfeatured from './assets/images/fourfeatured.mov';
+
+
 $(document).ready(function(){
 
 
